@@ -1,5 +1,6 @@
 [Unit]
 Description=Turns on backlight on keyboard
+After=gdm.service
 
 [Service]
 Type=oneshot
