@@ -5,7 +5,7 @@ all: init_submodules link
 init_submodules:
 	git submodule update --init --recursive
 
-link: link_systemd_system link_systemd_user link_zsh
+link: link_systemd_system link_systemd_user link_zsh link_fontconfig
 
 link_systemd_system:
 	./bin/link_systemd_system.sh
@@ -15,3 +15,6 @@ link_systemd_user:
 
 link_zsh:
 	./bin/link_zsh.sh
+
+link_fontconfig:
+	./bin/link_fontconfig.sh
