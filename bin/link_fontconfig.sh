@@ -1,7 +1,4 @@
 #!/bin/bash
 echo ---SYMLINKING FONTCONFIG---
-[ -e ~/.config/fontconfig ] || mkdir -p ~/.config/fontconfig
-for i in fontconfig/*
-do
-  [ -e ~/.config/fontconfig/$(basename $i) ] && echo $(basename $i) already exists || ln -s $PWD/$i ~/.config/fontconfig/
-done
+[ -e ~/.config/fontconfig ] || mkdir -p ~/.config/fontconfig ]
+[ -e ~/.config/fontconfig/fonts.conf ] && echo fonts.conf already exists || ln -s $PWD/font-config ~/.config/fontconfig/
